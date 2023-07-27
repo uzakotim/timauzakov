@@ -1,0 +1,20 @@
+#ifndef NODE_LIBRARIES_H
+#define NODE_LIBRARIES_H
+#include <iostream>
+#include <thread>
+#include <mutex>
+#include <chrono>
+#include <ctime>
+#include <fstream>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <termios.h>
+#include <vector>
+#include <pthread.h>
+#include <atomic>
+#include <eigen3/Eigen/Dense>
+#include <opencv2/opencv.hpp>
+#define frequency_to_milliseconds(frequency) 1000 / frequency
+#endif //NODE_LIBRARIES_H

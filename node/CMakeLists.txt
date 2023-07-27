@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(DEPOMME VERSION 1.0.0)
+find_package(OpenCV REQUIRED)
+include_directories(include /usr/local/include ${OpenCV_INCLUDE_DIRS})
+add_executable(run_me src/main.cpp include/node/libraries.h src/jsoncpp.cpp include/node/json/json.h)
+target_compile_features(run_me PRIVATE cxx_std_17)
+target_link_libraries(run_me pthread ${OpenCV_LIBS})
